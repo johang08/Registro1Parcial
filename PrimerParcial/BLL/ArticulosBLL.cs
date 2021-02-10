@@ -15,6 +15,6 @@ namespace PrimerParcial.BLL
             else
                 return Modificar(articulo);
         }
-
+        private static bool
     }
 }
