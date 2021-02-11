@@ -1,0 +1,16 @@
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\PrimerParcial.csprojAssemblyReference.cache
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\PrimerParcial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\PrimerParcial.AssemblyInfoInputs.cache
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\PrimerParcial.AssemblyInfo.cs
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\PrimerParcial.csproj.CoreCompileInputs.cache
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\PrimerParcial.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\PrimerParcial.RazorComponent.input.cache
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\PrimerParcial.RazorComponent.output.cache
