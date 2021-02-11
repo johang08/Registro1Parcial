@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using PrimerParcial.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,20 +9,43 @@ namespace PrimerParcial.BLL
 {
     public class ArticulosBLL
     {
-      /*  private Contexto contexto;
-        public ArticulosBLL
-            {
-            this.contexto = contexto;
-            }
+        private Contexto _dbContext;
 
-
-            public static bool Guardar(Articulos articulo)
+        public ArticulosBLL(Contexto _dbContext)
         {
-            if (!Existe(articulo.articuloId))
-                return Insertar(articulo);
-            else
-                return Modificar(articulo);
+            this._dbContext = _dbContext;
         }
-        private static bool */
+
+        public async Task<bool> Existe(int id)
+        {
+            bool pass = false;
+
+            try
+            {
+                pass = await _dbContext.Articulos.AnyAsync(await => a.ProductoId == id);
+            }
+            catch
+            {
+                throw;
+            }
+            return pass;
+        }
+
+        private async Task<bool> Insertar(Articulos articulo)
+        {
+            bool pass = false;
+
+            try
+            {
+                await _dbContext.Articulos.AddAsync(articulo);
+                pass = await _dbContext.SaveChangesAsync() > 0;
+            }
+            catch
+            {
+                throw;
+            }
+            return pass;
+        }
+
     }
 }
