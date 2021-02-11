@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace PrimerParcial.Shared
+namespace PrimerParcial.Pages
 {
     #line hidden
     using System;
@@ -82,7 +82,23 @@ using PrimerParcial.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 2 "C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\Pages\Registro.razor"
+using PrimerParcial.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\Pages\Registro.razor"
+using PrimerParcial.BLL;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Articulo")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Articulo/{ArticuloId:int}")]
+    public partial class Registro : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -90,16 +106,87 @@ using PrimerParcial.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 31 "C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\Shared\NavMenu.razor"
+#line 77 "C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\Pages\Registro.razor"
        
-    private bool collapseNavMenu = true;
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    string Mensaje = string.Empty;
 
-    private void ToggleNavMenu()
+    [Inject]
+    private ArticulosBLL articuloBLL { get; set; }
+
+    [Parameter]
+    public int ArticuloId { get; set; }
+
+    Articulos articulo = new Articulos();
+
+    protected override void OnInitialized()
     {
-        collapseNavMenu = !collapseNavMenu;
+        Nuevo();
     }
+
+
+    public async void Buscar()
+    {
+        var registro = await articuloBLL.Buscar(this.ArticuloId);
+
+        if (registro != null)
+        {
+            articulo = registro;
+
+        }
+        else
+        {
+            Mensaje = "Encontrado";
+        }
+    }
+
+    public void Nuevo()
+    {
+        Limpiar();
+    }
+
+    public async void Guardar()
+    {
+        articulo.ArticuloId = this.ArticuloId;
+        if (await articuloBLL.Guardar(articulo))
+        {
+
+            Mensaje = (" Save");
+            Limpiar();
+
+        }
+        else
+        {
+            Mensaje = ("No Save");
+
+        }
+    }
+
+    public async void Eliminar()
+    {
+        if (await articuloBLL.Eliminar(this.ArticuloId))
+        {
+            Mensaje = ("Borrado");
+            Limpiar();
+        }
+        else
+        {
+            Mensaje = ("No Borrado");
+
+        }
+    }
+
+    public void Limpiar()
+    {
+        articulo = new Articulos();
+        this.ArticuloId = 0;
+    }
+
+    private void Calcular()
+    {
+        articulo.ValorInventario = articulo.Costo * articulo.Existencia;
+    }
+
 
 #line default
 #line hidden

@@ -84,3 +84,5 @@ C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\Prim
 C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\ref\PrimerParcial.dll
 C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\PrimerParcial.pdb
 C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\PrimerParcial.genruntimeconfig.cache
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\RazorDeclaration\Pages\Registro.razor.g.cs
+C:\Users\DANNY\source\repos\Registro1Parcial\PrimerParcial\obj\Debug\net5.0\Razor\Pages\Registro.razor.g.cs
