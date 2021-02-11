@@ -11,6 +11,6 @@ namespace PrimerParcial.DAL
     {
         public DbSet<Articulos> Articulos { get; set; }
 
-    public Contexto(DbContext0ptions<Contexto> options) : base(options) { }
+    public Contexto(DbContextOptions<Contexto> options) : base(options) { }
     }
 }

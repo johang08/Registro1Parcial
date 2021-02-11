@@ -7,6 +7,12 @@ namespace PrimerParcial.BLL
 {
     public class ArticulosBLL
     {
+      /*  private Contexto contexto;
+        public ArticulosBLL
+            {
+            this.contexto = contexto;
+            }
+
 
             public static bool Guardar(Articulos articulo)
         {
@@ -15,6 +21,6 @@ namespace PrimerParcial.BLL
             else
                 return Modificar(articulo);
         }
-        private static bool
+        private static bool */
     }
 }
